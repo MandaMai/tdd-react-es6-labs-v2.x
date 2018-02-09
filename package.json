@@ -16,7 +16,7 @@
     "test": "karma start --singleRun",
     "jest": "jest",
     "build": "echo \"BUILD OK\" && exit 0",
-    "start": "webpack-dev-server --progress --inline --open",
+    "start": "webpack-dev-server  --historyApiFallback --progress --inline --open",
     "bundle": "webpack",
     "prebuild": "npm run version && npm run lint && npm run test && npm run bundle"
   },
